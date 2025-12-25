@@ -1,0 +1,193 @@
+/************************************ SECTION 1 */
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.section-1 .card {
+  width: 290px;
+  border: 1px solid var(--border-color);
+  transition: border 300ms ease-in-out;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 500px;
+  width: 100%;
+  transition: box-shadow 300ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  gap: 1.5rem;
+}
+
+.section-1 .card:hover {
+  box-shadow: 0 0.5rem 4rem 0 var(--shadow-color);
+}
+
+.section-1 .card .img {
+  border-radius: 100%;
+  overflow: hidden;
+  height: 205px;
+  width: 205px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-1 .card .img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--overlay-color-light);
+  z-index: 1;
+  transform: scale(0);
+  border-radius: 100%;
+  transition: transform 500ms ease-in-out;
+}
+
+.section-1 .card:hover .img::before {
+  transform: scale(1);
+}
+
+.section-1 .card .img img {
+  object-fit: cover;
+  height: 102%;
+  width: 102%;
+  transition: transform 500ms ease-in-out;
+}
+
+.section-1 .card:hover .img img {
+  transform: scale(1.1);
+}
+
+.section-1 .card .title a {
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 300ms ease-in-out;
+}
+
+.section-1 .card .title a:hover {
+  color: var(--main-color);
+}
+
+.section-1 .card .title div {
+  margin-top: 0.4rem;
+  letter-spacing: 0.1rem;
+  font-size: 12px;
+  color: var(--main-color);
+}
+
+.section-1 .card p {
+  color: var(--muted-color);
+  line-height: 1.8;
+  padding: 0 1rem;
+}
+
+.section-1 .card .footer {
+  background-color: var(--muted-background);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.3rem 2rem;
+  color: var(--muted-color);
+  font-size: 14px;
+  border-radius: 0.5rem;
+}
+
+.section-1 .card .footer .socials {
+  font-size: 15px;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.section-1 .card .footer .socials a {
+  transition: color 300ms ease-in-out;
+}
+
+.section-1 .card .footer .socials a:hover {
+  color: var(--main-color);
+}
+
+.section-2 {
+  background-color: var(--main-color);
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.section-2 img {
+  position: absolute;
+}
+
+.section-2 img:nth-child(1) {
+  bottom: 20svh;
+  left: 62svw;
+}
+
+.section-2 img:nth-child(2) {
+  bottom: 10svh;
+  left: 75svw;
+}
+
+.section-2 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.section-2 h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  max-width: 677px;
+}
+
+.section-2 button {
+  background-color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 236px;
+  height: 60px;
+}
+
+@media (min-width: 768px) {
+  .section-2 h2 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-1 {
+    flex-direction: row;
+  }
+
+  .section-1 .card {
+    width: 290px;
+  }
+
+  .section-2 .container {
+    flex-direction: row;
+  }
+
+  .section-2 h2 {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-1 .card {
+    width: 370px;
+  }
+}

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../assets/css/pages/teachers.css">
+  <script src="../assets/js/script.js" defer></script>
+  <title>Teachers</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header__top container">
+      <h2 class="header__top__logo">EduLearn</h2>
+      <div class="header__top__left">
+        <ul class="header__top__left__socials">
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="header__top__left__contacts">
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <p>Call Agent</p>
+              <a href="tel:928886660000">92 888 666 0000</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <p>Call Agent</p>
+              <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="header__bottom container">
+      <ul class="header__bottom__left__nav__desktop">
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../pages/about.html">About</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">Courses</a>
+          <ul class="header__bottom__left__nav__desktop__submenu">
+            <li>
+              <a href="../pages/courses.html">Courses</a>
+            </li>
+            <li>
+              <a href="../pages/course-details.html">Course Details</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:void(0)" class="active">Teachers</a>
+          <ul class="header__bottom__left__nav__desktop__submenu">
+            <li>
+              <a href="../pages/teachers.html" class="active">Teachers</a>
+            </li>
+            <li>
+              <a href="../pages/become-a-teacher.html">Become A Teacher</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:void(0)">News</a>
+          <ul class="header__bottom__left__nav__desktop__submenu">
+            <li>
+              <a href="../pages/news.html">News</a>
+            </li>
+            <li>
+              <a href="../pages/news-details.html">News Details</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../pages/contact.html">Contact</a>
+        </li>
+      </ul>
+      <button id="header__nav__mobile__menu__opener">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="header__bottom__right">
+        <div class="header__bottom__right__auth">
+          <a href="#">Login</a>
+          <a href="#">Register</a>
+        </div>
+        <div class="header__bottom__right__buttons">
+          <button class="header__bottom__right__buttons__cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <button class="header__bottom__right__buttons__search button">
+            <span>SEARCH</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div id="header__nav__mobile__wrapper">
+    <div class="header__nav__mobile__overlay"></div>
+    <div class="header__nav__mobile__logo">
+      <span>EduLearn</span>
+      <button id="header__nav__mobile__menu__closer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="header__nav__mobile__menu">
+      <li>
+        <a href="../index.html">Home</a>
+      </li>
+      <li>
+        <a href="../pages/about.html">About</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">Courses</a>
+        <ul class="header__nav__mobile__submenu">
+          <li>
+            <a href="../pages/courses.html">Courses</a>
+          </li>
+          <li>
+            <a href="../pages/course-details.html">Course Details</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0)">Teachers</a>
+        <ul class="header__nav__mobile__submenu">
+          <li>
+            <a href="../pages/teachers.html">Teachers</a>
+          </li>
+          <li> class="title"
+            <a href="../pages/become-a-teacher.html">
+              Become A
+               Teacher</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0)">News</a>
+        <ul class="header__nav__mobile__submenu">
+          <li>
+            <a href="../pages/news.html">News</a>
+          </li>
+          <li>
+            <a href="../pages/news-details.html">News Details</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="../pages/contact.html">Contact</a>
+      </li>
+    </ul>
+    <div class="header__nav__mobile__auth">
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+    </div>
+    <ul class="header__nav__mobile__contacts">
+      <li>
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:928886660000">92 888 666 0000</a>
+      </li>
+      <li>
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+      </li>
+    </ul>
+    <ul class="header__nav__mobile__socials">
+      <li>
+        <a href="#">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- SHOWCASE -->
+    <section class="showcase">
+      <div class="container">
+        <h1>Teachers</h1>
+      </div>
+    </section>
+
+    <!-- SECTION 1 -->
+    <section class="section-1 container">
+      <div class="card">
+        <div class="img">
+          <img src="../assets/images/teacher_1.png" alt="Teacher 1">
+        </div>
+        <div class="title">
+          <a href="../pages/become-a-teacher.html">
+            David Cooper
+          </a>
+          <div>TEACHER</div>
+        </div>
+        <p>There are many varia of passages the free ipsum lorem.</p>
+        <div class="footer">
+          <div>20 Courses</div>
+          <ul class="socials">
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="../assets/images/teacher_2.png" alt="Teacher 2">
+        </div>
+        <div class="title">
+          <a href="../pages/become-a-teacher.html">
+            Sarah Albert
+          </a>
+          <div>TEACHER</div>
+        </div>
+        <p>There are many varia of passages the free ipsum lorem.</p>
+        <div class="footer">
+          <div>20 Courses</div>
+          <ul class="socials">
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="../assets/images/teacher_3.png" alt="Teacher 3">
+        </div>
+        <div class="title">
+          <a href="../pages/become-a-teacher.html">
+            John Smith
+          </a>
+          <div>TEACHER</div>
+        </div>
+        <p>There are many varia of passages the free ipsum lorem.</p>
+        <div class="footer">
+          <div>20 Courses</div>
+          <ul class="socials">
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="../assets/images/teacher_4.png" alt="Teacher 4">
+        </div>
+        <div class="title">
+          <a href="../pages/become-a-teacher.html">
+            Jessica Brown
+          </a>
+          <div>TEACHER</div>
+        </div>
+        <p>There are many varia of passages the free ipsum lorem.</p>
+        <div class="footer">
+          <div>20 Courses</div>
+          <ul class="socials">
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="../assets/images/teacher_5.png" alt="Teacher 5">
+        </div>
+        <div class="title">
+          <a href="../pages/become-a-teacher.html">
+            Mike Hardson
+          </a>
+          <div>TEACHER</div>
+        </div>
+        <p>There are many varia of passages the free ipsum lorem.</p>
+        <div class="footer">
+          <div>20 Courses</div>
+          <ul class="socials">
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="../assets/images/teacher_6.png" alt="Teacher 6">
+        </div>
+        <div class="title">
+          <a href="../pages/become-a-teacher.html">
+            Christine Eve
+          </a>
+          <div>TEACHER</div>
+        </div>
+        <p>There are many varia of passages the free ipsum lorem.</p>
+        <div class="footer">
+          <div>20 Courses</div>
+          <ul class="socials">
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="section-2">
+      <img src="../assets/images/discover_1.png" alt="Discover 1">
+      <img src="../assets/images/discover_2.png" alt="Discover 2">
+      <div class="container">
+        <h2>Start Your Education Career With EduLearn</h2>
+        <button class="button">
+          <span>DISCOVER MORE</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer__top container">
+      <h2 class="footer__top__logo">EduLearn</h2>
+      <div class="footer__top__links">
+        <h3>Courses</h3>
+        <ul>
+          <li>
+            <a href="#">UI/UX Design</a>
+          </li>
+          <li>
+            <a href="#">WordPress Development</a>
+          </li>
+          <li>
+            <a href="#">Business Strategy</a>
+          </li>
+          <li>
+            <a href="#">Software Development</a>
+          </li>
+          <li>
+            <a href="#">Business English</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__top__links">
+        <h3>Links</h3>
+        <ul>
+          <li>
+            <a href="../pages/about.html">About Us</a>
+          </li>
+          <li>
+            <a href="#">Overview</a>
+          </li>
+          <li>
+            <a href="../pages/teachers.html">Teachers</a>
+          </li>
+          <li>
+            <a href="#">Join Us</a>
+          </li>
+          <li>
+            <a href="../pages/news.html">Our News</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__top__links">
+        <h3>Contact</h3>
+        <ul>
+          <li>
+            <a href="#">88 Brooklyn street, New York, USA</a>
+          </li>
+          <li>
+            <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+          </li>
+          <li>
+            <a href="tel:928886660000">92 888 666 0000</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer__top__socials">
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__bottom">
+      &copy; Copyright 2025 by PDPStudents.com
+    </div>
+  </footer>
+</body>
+</html>

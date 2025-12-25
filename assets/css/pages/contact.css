@@ -1,0 +1,165 @@
+/************************************ SECTION 1 */
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.section-1 .card {
+  max-width: 100%;
+  border: 1px solid transparent;
+  transition: border 300ms ease-in-out;
+  display: flex;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 0.5rem 4rem 0 var(--shadow-color);
+  gap: 20px;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 500px;
+}
+
+.section-1 .card:hover {
+  border: 1px solid var(--main-color);
+}
+
+.section-1 .card .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  background-color: var(--muted-background);
+  color: var(--main-color);
+  font-size: 1.5rem;
+  position: relative;
+  transition: color 200ms ease-in-out;
+}
+
+.section-1 .card .img i {
+  position: relative;
+  transition: color 250ms ease-in-out;
+}
+
+.section-1 .card:hover .img i {
+  color: #fff;
+}
+
+.section-1 .card .img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--main-color);
+  border-radius: 100%;
+  transform: scale(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.section-1 .card:hover .img::before {
+  transform: scale(1);
+}
+
+.section-1 .card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.section-1 .card a {
+  font-weight: bold;
+  transition: color 300ms ease-in-out;
+}
+
+.section-1 .card:hover .info a {
+  color: var(--main-color);
+}
+
+.section-1 .card span {
+  color: var(--muted-color);
+}
+
+/************************************ SECTION 2 */
+.section-2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7.5rem;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.section-2 form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section-2 form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section-2 input {
+  flex-grow: 1;
+  border: none;
+  background-color: var(--muted-background);
+  height: 60px;
+  padding: 0 2rem;
+  border-radius: 0.5rem;
+}
+
+.section-2 textarea {
+  height: 200px;
+  resize: vertical;
+  background-color: var(--muted-background);
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+  border: none;
+}
+
+.section-2 button {
+  background-color: var(--main-color);
+  font-size: 14px;
+  color: #fff;
+  height: 60px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/************************************ SECTION 3 */
+.section-3 iframe {
+  height: 580px;
+  width: 100svw;
+}
+
+@media (min-width: 992px) {
+  .section-1 {
+    flex-direction: row;
+  }
+
+  .section-2 {
+    flex-direction: row;
+  }
+
+  .section-2 form {
+    min-width: 610px;
+  }
+
+  .section-2 form > div {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-2 form {
+    min-width: 770px;
+  }
+}
